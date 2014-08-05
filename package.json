@@ -1,0 +1,24 @@
+{
+  "name": "omni-node",
+  "version": "0.0.0",
+  "description": "Node.js layer for Omni",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/chapmanu/omni-node.git"
+  },
+  "keywords": [
+    "omni",
+    "elasticsearch",
+    "chapman"
+  ],
+  "author": "Chapman University",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/chapmanu/omni-node/issues"
+  },
+  "homepage": "https://github.com/chapmanu/omni-node"
+}
