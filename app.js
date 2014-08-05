@@ -1,4 +1,11 @@
-var elasticsearch = require('elasticsearch');
-var express       = require('express');
+// NPM dependencies
+var express = require('express');
 
+
+// App dependencies
+var client = require('./lib/client.js');
+
+
+
+// Do Nothing
 console.log('Nothing yet').
