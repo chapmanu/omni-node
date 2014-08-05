@@ -25,7 +25,8 @@ module.exports = {
     if (req.param('types'))    options.types    = req.param('types').split(',');
     
     // Do search
-    client.search(query, options, function(error, results) {
+    client.search(query, options, function(error, search_results) {
+      
       if (error) {
         console.log(error);
         return responses.respond(req, res, responses.internal_error);
@@ -33,7 +34,7 @@ module.exports = {
       
       var response = {
         status: 200,
-        content: results
+        content: search_results
       };
       
       return responses.respond(req, res, response);

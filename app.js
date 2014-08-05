@@ -35,7 +35,7 @@ var config = {
 /**
  * Initialization
  */
-//client.initialize(config.client);
+client.initialize(config.client);
 server.initialize(config.server);
 
 
