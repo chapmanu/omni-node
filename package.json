@@ -20,5 +20,9 @@
   "bugs": {
     "url": "https://github.com/chapmanu/omni-node/issues"
   },
-  "homepage": "https://github.com/chapmanu/omni-node"
+  "homepage": "https://github.com/chapmanu/omni-node",
+  "dependencies": {
+    "elasticsearch": "^2.4.0",
+    "express": "^4.7.4"
+  }
 }
