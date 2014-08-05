@@ -23,6 +23,7 @@
   "homepage": "https://github.com/chapmanu/omni-node",
   "dependencies": {
     "elasticsearch": "^2.4.0",
-    "express": "^4.7.4"
+    "express": "^4.7.4",
+    "body-parser": "^1.5.2"
   }
 }
