@@ -1,6 +1,7 @@
 // Dependencies
 var client    = require('../lib/client.js');
 var responses = require('../helpers/responses.js');
+var format    = require('../helpers/format.js');
 
 
 /**
@@ -26,6 +27,7 @@ module.exports = {
     
     // Do search
     client.search(query, options, function(error, search_results) {
+      var results = format.results(query, options, search_results);
       
       if (error) {
         console.log(error);
@@ -34,7 +36,7 @@ module.exports = {
       
       var response = {
         status: 200,
-        content: search_results
+        content: results
       };
       
       return responses.respond(req, res, response);
